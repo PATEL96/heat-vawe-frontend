@@ -3,3 +3,8 @@
 	background-color:aquamarine;
 	height: 10vh;
 }
+
+.Logo{
+	height: 10vh;
+	aspect-ratio: 1 / 1;
+}
