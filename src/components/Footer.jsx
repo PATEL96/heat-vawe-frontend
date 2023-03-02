@@ -19,7 +19,7 @@ const Footer=()=>{
     return (
             <div className="Container">
                 <footer className="Footer">
-                    <hr/>
+                    <hr className="SecondaryHR" />
                     <div className="Wrapper">
                         <div className="OneRow RROOWW">
                             <h5 className="FooterHeadings">Become a Vawer</h5>
@@ -60,7 +60,7 @@ const Footer=()=>{
                     </div>
                     <div className="Wrapper2">
                         <div className="Logo RROOWW">
-                                <img className="logoImg" src={Logo}/>
+                                <img className="logoImg" src={Logo} alt="Heat_Vawe"/>
                         </div>
                         <div className="social RROOWW">
                                 <InstagramIcon/>

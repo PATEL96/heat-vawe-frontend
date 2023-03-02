@@ -1,8 +1,12 @@
 import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
 
-const App = () => {
+function App() {
   return (
-    <Footer/>
+    <div>
+      <Navbar />
+      <Footer/>
+    </div>
   );
 }
 
