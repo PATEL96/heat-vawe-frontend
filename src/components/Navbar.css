@@ -1,7 +1,15 @@
 .nav-main{
 	color: azure;
-	background-color:aquamarine;
+	background-color:transparent;
 	height: 10vh;
+	position: sticky;
+	top: 0;
+	transition: 0.3s ease-in;
+}
+
+.nav-main.active{
+	background: white;
+	transition: 0.3s ease-in;
 }
 
 .Logo{
