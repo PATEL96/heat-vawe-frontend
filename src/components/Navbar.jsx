@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import './Navbar.css';
-import logo from '../images/logo.png';
+import logoImg from '../images/logo.png';
 
 export default function Navbar() {
 	const[navbar, setNavbar] = useState(false);
@@ -21,9 +21,13 @@ export default function Navbar() {
 	return(
 		<div className={navbar ? 'nav-main active' : 'nav-main'}>
 			<div className="navContent">
-				<img src={logo} alt="Heat_Vawe" className="Logo" />
+				<div className="Icon">
+					<img src={logoImg} alt="Heat_Vawe" className="Logo" />
+				</div>
 				<div className="options" >
-					<div>Home</div>
+					<div>
+						Home
+					</div>
 					<div>T-Shirts</div>
 					<div>About</div>
 				</div>
