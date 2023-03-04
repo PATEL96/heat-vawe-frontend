@@ -5,14 +5,17 @@ import logoImg from '../images/logo.png';
 
 export default function Navbar() {
 	const[navbar, setNavbar] = useState(false);
+	const[navContent, setNavContent] = useState(false);
 
 	var viewport_height = window.innerHeight;
 
 	const changeNav = () => {
 		if(window.scrollY >= (viewport_height*0.1)){
 			setNavbar(true);
+			setNavContent(true);
 		} else {
 			setNavbar(false);
+			setNavContent(false);
 		}
 	}
 
@@ -20,16 +23,24 @@ export default function Navbar() {
 
 	return(
 		<div className={navbar ? 'nav-main active' : 'nav-main'}>
-			<div className="navContent">
-				<div className="Icon">
+			<div className={navContent ? 'navContent active' : 'navContent'}>
+				<div className="leftSide">
 					<img src={logoImg} alt="Heat_Vawe" className="Logo" />
-				</div>
-				<div className="options" >
-					<div>
-						Home
+					<div className="HomeButton">
+						<div className="home">
+							Home
+						</div>
 					</div>
-					<div>T-Shirts</div>
-					<div>About</div>
+					<div className="over">
+						Oversized T-Shirts
+					</div>
+					<div className="collection">
+						{/* // Todo: make list Here */}
+						Collections
+					</div>
+					<div className="about">
+						About
+					</div>
 				</div>
 			</div>
 		</div>

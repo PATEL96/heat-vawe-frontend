@@ -1,9 +1,9 @@
 .nav-main{
+	z-index: 10;
 	color: azure;
 	background-color:transparent;
 	height: 10vh;
 	width: 100%;
-	/* align-items: center; */
 	justify-content: center;
 	position: sticky;
 	top: 0;
@@ -12,31 +12,68 @@
 
 
 .nav-main.active{
-	background: white;
+	background: rgba(255, 255, 255, 0.211);
+	backdrop-filter: blur(20px);
 	transition: 0.3s ease-in;
 }
 
 .navContent{
-	display: flex;
+	/* display: flex;
 	flex-direction: row;
 	align-items: center;
-	justify-content: center;
+	justify-content: center; */
+	color: white;
+	transition: 0.3s ease-in;
 }
 
-.Icon{
-	position: absolute;
-	top: 0px;
-	left: 0px;
+.navContent.active{
+	transition: 0.3s ease-in;
 }
 
 .Logo{
 	padding: 5px;
 	height: 8.5vh;
 	aspect-ratio: 1 / 1;
+	padding-left: 10px;
+	padding-right: 10px;
 }
-.options{
-	color: black;
+
+.leftSide{
 	display: flex;
+	flex-direction: row;
 	align-items: center;
 	justify-content: center;
+	float: left;
+}
+
+.home{
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	font-size: 2.7vh;
+	cursor: pointer;
+}
+
+.over{
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	font-size: 2.7vh;
+	cursor: pointer;
+}
+
+.collection{
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	font-size: 2.7vh;
+	cursor: pointer;
+}
+
+.about{
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	font-size: 2.7vh;
+	cursor: pointer;
 }
