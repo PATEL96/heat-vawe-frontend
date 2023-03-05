@@ -47,22 +47,55 @@
 }
 
 .home{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	padding-left: 10px;
 	padding-right: 10px;
 	padding-bottom: 5px;
 	font-size: 2.7vh;
 	cursor: pointer;
+}
+
+.home hr{
+	margin: 0;
+	border: 0;
+	width: 0%;
+	border-bottom: 2.5px solid #d20707;
+	transition: width 0.3s ease-out;
+}
+
+.home:hover > hr{
+	width: 55%;
 }
 
 .over{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	padding-left: 10px;
 	padding-right: 10px;
 	padding-bottom: 5px;
 	font-size: 2.7vh;
 	cursor: pointer;
+}
+
+.over hr{
+	margin: 0;
+	border: 0;
+	width: 0%;
+	border-bottom: 2.5px solid #d20707;
+	transition: width 0.3s ease-out;
+}
+
+.over:hover > hr{
+	width: 55%;
 }
 
 .collection{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	padding-left: 10px;
 	padding-right: 10px;
 	padding-bottom: 5px;
@@ -70,10 +103,37 @@
 	cursor: pointer;
 }
 
+.collection hr{
+	margin: 0;
+	border: 0;
+	width: 0%;
+	border-bottom: 2.5px solid #d20707;
+	transition: width 0.3s ease-out;
+}
+
+.collection:hover > hr{
+	width: 55%;
+}
+
 .about{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	padding-left: 10px;
 	padding-right: 10px;
 	padding-bottom: 5px;
 	font-size: 2.7vh;
 	cursor: pointer;
+}
+
+.about hr{
+	margin: 0;
+	border: 0;
+	width: 0%;
+	border-bottom: 2.5px solid #d20707;
+	transition: width 0.3s ease-out;
+}
+
+.about:hover > hr{
+	width: 55%;
 }

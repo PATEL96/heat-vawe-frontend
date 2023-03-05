@@ -26,20 +26,22 @@ export default function Navbar() {
 			<div className={navContent ? 'navContent active' : 'navContent'}>
 				<div className="leftSide">
 					<img src={logoImg} alt="Heat_Vawe" className="Logo" />
-					<div className="HomeButton">
-						<div className="home">
-							Home
-						</div>
+					<div className="home">
+						Home
+						<hr color="none" />
 					</div>
 					<div className="over">
 						Oversized T-Shirts
+						<hr color="none" />
 					</div>
 					<div className="collection">
 						{/* // Todo: make list Here */}
 						Collections
+						<hr color="none" />
 					</div>
 					<div className="about">
 						About
+						<hr color="none" />
 					</div>
 				</div>
 			</div>
