@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 .Container{
-    font-family: 'Montserrat';
+    font-family: 'Montserrat','san-serif';
     margin-top: 50px;
     padding-top: 100vh;
     
@@ -90,8 +91,8 @@ hr{
 .Copyright{
     color: #8b8a8a;
     text-align: center;
-    font-size: 0.5rem;
-    margin-top: 20px;
+    font-size: 0.9rem;
+    margin: 20px auto;
 }
 @media (max-width: 768px) {
     .SubSubmitButton{
