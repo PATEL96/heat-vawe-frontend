@@ -1,6 +1,6 @@
 
 import {React,useState} from "react";
-import Logo from '../images/logo.png';
+import logo from '../images/logo.png';
 import './Footer.css';
 import InstagramIcon from '@mui/icons-material/Instagram';
 
@@ -60,7 +60,7 @@ const Footer=()=>{
                     </div>
                     <div className="Wrapper2">
                         <div className="Logo RROOWW">
-                                <img className="logoImg" src={Logo} alt="Heat_Vawe"/>
+                                <img className="logoImg" src={logo} alt="Heat_Vawe"/>
                         </div>
                         <div className="social RROOWW">
                                 <InstagramIcon/>
