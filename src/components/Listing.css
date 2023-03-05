@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+.List-main{
+    margin: 30px 20px;
+    width: 320px;
+    height: 450px;
+    padding: 30px;
+    font-family:'Montserrat';
+    cursor: pointer;
+
+}
+
+.image{
+
+}
+
+.productImage{
+    width: 320px;
+    height: 450px;
+    
+}
+
+.productDetails{
+
+}
+
+.productName{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.Name{
+    margin: 5px 0;
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+
+.productPrice{
+    display: flex;
+    font-size: 0.8rem;
+    margin: 10px 0;
+    animation: ease 2s;
+
+}
+.price{
+    padding: 2px 5px;
+    padding-left: 0;
+}
+.discountPrice{
+    background-color: red;
+    padding: 2px 5px;
+    margin-left: 20px;
+}
+
+
