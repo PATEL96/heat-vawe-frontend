@@ -10,7 +10,7 @@ export default function Navbar() {
 	var viewport_height = window.innerHeight;
 
 	const changeNav = () => {
-		if(window.scrollY >= (viewport_height*0.1)){
+		if(window.scrollY >= (viewport_height*0.04)){
 			setNavbar(true);
 			setNavContent(true);
 		} else {
