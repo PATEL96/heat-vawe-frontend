@@ -51,6 +51,14 @@
 	float: left;
 }
 
+.mobile {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	float: left;
+}
+
 .home {
 	display: flex;
 	flex-direction: column;
@@ -141,4 +149,153 @@
 
 .about:hover>hr {
 	width: 55%;
+}
+
+@media screen and (max-width: 1250px) {
+	.nav-main {
+		font-weight: 300;
+		font-family: 'Montserrat';
+		z-index: 10;
+		color: azure;
+		background-color: transparent;
+		height: 10vh;
+		width: 100%;
+		justify-content: center;
+		position: sticky;
+		top: 0;
+		transition: 0.3s ease-in;
+	}
+	
+	
+	.nav-main.active {
+		background: rgba(255, 255, 255, 0.211);
+		backdrop-filter: blur(20px);
+		transition: 0.3s ease-in;
+	}
+	
+	.navContent {
+		/* display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center; */
+		color: white;
+		transition: 0.3s ease-in;
+	}
+	
+	.navContent.active {
+		transition: 0.3s ease-in;
+	}
+	
+	.Logo {
+		cursor: pointer;
+		padding: 5px;
+		height: 8.5vh;
+		aspect-ratio: 1 / 1;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	
+	.leftSide {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		float: left;
+	}
+
+	.mobile-on{
+
+	}
+	
+	.home {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-bottom: 5px;
+		font-size: 2.7vh;
+		cursor: pointer;
+	}
+	
+	.home hr {
+		margin: 0;
+		border: 0;
+		width: 0%;
+		border-bottom: 2.5px solid #d20707;
+		transition: width 0.3s ease-out;
+	}
+	
+	.home:hover>hr {
+		width: 55%;
+	}
+	
+	.over {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-bottom: 5px;
+		font-size: 2.7vh;
+		cursor: pointer;
+	}
+	
+	.over hr {
+		margin: 0;
+		border: 0;
+		width: 0%;
+		border-bottom: 2.5px solid #d20707;
+		transition: width 0.3s ease-out;
+	}
+	
+	.over:hover>hr {
+		width: 55%;
+	}
+	
+	.collection {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-bottom: 5px;
+		font-size: 2.7vh;
+		cursor: pointer;
+	}
+	
+	.collection hr {
+		margin: 0;
+		border: 0;
+		width: 0%;
+		border-bottom: 2.5px solid #d20707;
+		transition: width 0.3s ease-out;
+	}
+	
+	.collection:hover>hr {
+		width: 55%;
+	}
+	
+	.about {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-bottom: 5px;
+		font-size: 2.7vh;
+		cursor: pointer;
+	}
+	
+	.about hr {
+		margin: 0;
+		border: 0;
+		width: 0%;
+		border-bottom: 2.5px solid #d20707;
+		transition: width 0.3s ease-out;
+	}
+	
+	.about:hover>hr {
+		width: 55%;
+	}
 }

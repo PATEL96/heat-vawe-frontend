@@ -5,17 +5,14 @@ import logoImg from '../images/logo.png';
 
 export default function Navbar() {
 	const[navbar, setNavbar] = useState(false);
-	const[navContent, setNavContent] = useState(false);
 
 	var viewport_height = window.innerHeight;
 
 	const changeNav = () => {
 		if(window.scrollY >= (viewport_height*0.04)){
 			setNavbar(true);
-			setNavContent(true);
 		} else {
 			setNavbar(false);
-			setNavContent(false);
 		}
 	}
 
@@ -23,7 +20,7 @@ export default function Navbar() {
 
 	return(
 		<div className={navbar ? 'nav-main active' : 'nav-main'}>
-			<div className={navContent ? 'navContent active' : 'navContent'}>
+			<div className="navContent">
 				<div className="leftSide">
 					<img src={logoImg} alt="Heat_Vawe" className="Logo" />
 					<div className="home">

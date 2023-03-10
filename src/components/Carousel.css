@@ -1,5 +1,5 @@
-.carousel{
-	height: 100%;
+.car-main{
+	height: 90vh;
 }
 
 .carousel .control-dots .dots {
@@ -8,13 +8,22 @@
 	width: 20px;
 }
 
-.carousel .slide img {
-	height: 100%;
-	aspect-ratio: 1920 /1080;
+.slide img {
+	height: auto;
+	width: 100%;
+	aspect-ratio: 16 / 9;
 }
 
 .image-wrapper{
-	width: 100%;
 	height: 90vh;
-	aspect-ratio: 16 / 9;
+}
+
+@media screen and (max-width: 1250px) {
+	.car-mobile{
+		width: 100%;
+	}
+
+	.image-wrapper{
+		height: 100%;
+	}
 }
