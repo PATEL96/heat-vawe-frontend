@@ -12,7 +12,7 @@ const SubmitFormHandler=(e)=>{
 
 const Footer=()=>{
     const [Email, setEmail] = useState("");
-    console.log(Email);
+    // console.log(Email);
 
     
 
