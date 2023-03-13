@@ -59,7 +59,7 @@ const Strike=styled.span`
 const Price=styled.span`
       font-weight:100;
       font-size:40px;
-      color:red;
+      color:#72c4d9;
 `
 
 const FilterContainer=styled.div`
@@ -98,6 +98,7 @@ const FilterSize=styled.select`
     background-color:#714c93;
     color:#f7d400;
     border-radius:10%;
+    border:0;
 
 `
 
@@ -113,12 +114,18 @@ const AddContainer=styled.div`
       ${mobile({ width:"100%" })}
 
 
+
 `
 
 const AmountContainer=styled.span`
     display:flex;
       align-items:center;
       font-weight:700;
+      text-align:center;
+      &:hover{
+        cursor:not-allowed;
+      }
+      
 `
 
 const Amount=styled.span`
@@ -141,12 +148,18 @@ const Button=styled.button`
       border:5px solid #714c93;
       cursor:pointer;
       color:#f7d400;
-      font-weight:600;
+      font-weight:800;
       &:hover{
-        background-color:#714c93;
-        border-radius:10%;
+        color:#714c93;
+        background-color:#f7d400;
+        border:5px solid #f7d400;
+        
+        text-shadow: 2.5px;
         transition:all 0.5s ease ;
       }
+`
+const MaterialUI=styled.div`
+    cursor:pointer;
 `
 const RelatedProductsWrapper= styled.div``
 
@@ -237,9 +250,9 @@ const ProductSingle = () => {
                 </FilterContainer>
                 <AddContainer>
                   <AmountContainer>
-                        <RemoveIcon onClick={() => handleQuantity("dec")} />
+                        <MaterialUI><RemoveIcon onClick={() => {handleQuantity("dec")}} /></MaterialUI>
                         <Amount>{quantity}</Amount>
-                        <AddIcon onClick={() => handleQuantity("inc")} />
+                        <MaterialUI><AddIcon onClick={() => {handleQuantity("inc")}} /></MaterialUI>
                   </AmountContainer>
                   <Button onClick={handleAddTOCart}>ADD TO CART</Button>
                 </AddContainer>
