@@ -21,6 +21,12 @@ const Wrapper=styled.div`
   display:flex;
   ${mobile({padding:"10px", flexDirection: "column" })}
 `
+const Wrapper2=styled.div`
+  padding:50px;
+  display:flex;
+  flex-wrap:wrap;
+  ${mobile({padding:"10px", flexDirection: "column" })}
+`
 
 const ImgContainer=styled.div`
     flex:1;
@@ -161,7 +167,60 @@ const Button=styled.button`
 const MaterialUI=styled.div`
     cursor:pointer;
 `
+const Descriptioncontainer= styled.div`
+      display:flex;
+      flex-derection:column;
+      flex-wrap:wrap;
+
+`
+const DescriptionHeading=styled.h3`
+        color:#efb903;
+`
+const Description= styled.div`
+        flex:1`
+
+const ProductDescriptionList= styled.ul`
+       list-style-type: none;
+`
+const Ul= styled.ul`
+      list-style-type: disc;
+
+`
+const ListItem =styled.li`
+      margin:5px;
+      font-size:1.25rem;
+      ${mobile({ fontSize:"0.75rem"})}
+`
+const ListItemSpan =styled.span`
+      font-size:1.75rem;
+      ${mobile({ fontSize:"1.25rem"})}
+`
+const UlListItem =styled.li`
+      margin:5px;
+      color:#714c93;
+      font-size:1.25rem;
+      ${mobile({ fontSize:"1.25rem"})}
+`
+const UlListItemSpan =styled.span`
+      font-size:1.75rem;
+      margin:5px;
+      color:white;
+      ${mobile({ fontSize:"1.25rem"})}
+`
+
+
+const ProductDescriptionListH5= styled.h5`
+       color:#63B1C5;
+       display:inline;
+       font-weight:900;
+       font-size:2rem;
+       ${mobile({ fontSize:"1rem"})}
+`
+
+
 const RelatedProductsWrapper= styled.div``
+
+
 
 const ProductSingle = () => {
     // const location=useLocation();
@@ -260,6 +319,54 @@ const ProductSingle = () => {
               </InfoContainer>
 
             </Wrapper>
+            <Wrapper2>
+            <Descriptioncontainer>
+              <Description>
+                    <DescriptionHeading>Product details:</DescriptionHeading>
+                    <ProductDescriptionList>
+                        <ListItem><ProductDescriptionListH5>Composition:</ProductDescriptionListH5> <ListItemSpan>100% cotton</ListItemSpan></ListItem>
+                        <ListItem><ProductDescriptionListH5>GSM:</ProductDescriptionListH5> <ListItemSpan>100</ListItemSpan></ListItem>
+                        <ListItem><ProductDescriptionListH5>Weight</ProductDescriptionListH5> <ListItemSpan>100g</ListItemSpan></ListItem>
+                        <ListItem><ProductDescriptionListH5>sizes</ProductDescriptionListH5> <ListItemSpan>S, M, L, XL, XXL</ListItemSpan></ListItem>
+                        <ListItem><ProductDescriptionListH5>Estimated order processing time:</ProductDescriptionListH5> <ListItemSpan>48hrs</ListItemSpan></ListItem>
+                        <ListItem><ProductDescriptionListH5>Sleeve Lenght: </ProductDescriptionListH5><ListItemSpan>Half sleeve</ListItemSpan></ListItem>
+                        <ListItem><ProductDescriptionListH5>Neckline: </ProductDescriptionListH5><ListItemSpan>round</ListItemSpan></ListItem>
+                        <ListItem><h2>Made with ❤️ in <span style={{color:"orange"}}>IN</span>D<span style={{color:"green"}}>IN</span></h2></ListItem>
+                    </ProductDescriptionList>
+              </Description>
+
+              <Description>
+                    <DescriptionHeading>Related Infromation:</DescriptionHeading>
+                    <ProductDescriptionList>
+                        <ListItem><ProductDescriptionListH5>shipping:</ProductDescriptionListH5> <ListItemSpan>
+                                                    <Ul>
+                                                      <UlListItem><UlListItemSpan>Pay Whne order is placed, No COD</UlListItemSpan></UlListItem>
+                                                    </Ul>
+                                                    </ListItemSpan></ListItem>
+                        <ListItem><ProductDescriptionListH5>Return & exchange:</ProductDescriptionListH5> <ListItemSpan>
+                                                    <Ul>
+                                                      <UlListItem><UlListItemSpan>For any returns and exchange please read our FAQs Page.
+                                                      </UlListItemSpan></UlListItem>
+                                                    </Ul>
+                                                    </ListItemSpan></ListItem>
+                        <ListItem><ProductDescriptionListH5>Wash care:</ProductDescriptionListH5> <ListItemSpan>
+                                                    <Ul>
+                                                      <UlListItem><UlListItemSpan>Machine wash cold with similar colours.</UlListItemSpan></UlListItem>
+                                                      <UlListItem><UlListItemSpan>Only non-chlorine.Tumble dry low.</UlListItemSpan></UlListItem>
+                                                      <UlListItem><UlListItemSpan>Warm Iron if needed.</UlListItemSpan></UlListItem>
+                                                    </Ul>
+                                                    </ListItemSpan></ListItem>
+                        <ListItem><ProductDescriptionListH5>Note:</ProductDescriptionListH5> <ListItemSpan>
+                                                    <Ul>
+                                                      <UlListItem><UlListItemSpan>Colours may slightly vary depending on your screen brightness.</UlListItemSpan></UlListItem>
+                                                      <UlListItem><UlListItemSpan>Actual product specifications may vary +/-5%.</UlListItemSpan></UlListItem>
+                                                      <UlListItem><UlListItemSpan>All the products have different sizes and size chart.</UlListItemSpan></UlListItem>
+                                                    </Ul>
+                                                </ListItemSpan></ListItem>
+                    </ProductDescriptionList>
+              </Description>
+              </Descriptioncontainer>
+            </Wrapper2>
             <RelatedProductsWrapper>
 
             </RelatedProductsWrapper>
