@@ -1,19 +1,15 @@
 import './App.css';
 import Carousel from "./components/Carousel";
-import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
-import ProfuctsListed from "./components/ProductsListed";
+import AllProductsPage from "./pages/AllProductsPage";
+import Home from "./pages/Home";
+import ProductSingle from "./pages/Product";
 
 function App() {
   return (
-    <div className='App'>
-      <Navbar />
-
-      <Carousel />
-
-      <ProfuctsListed />
-
-      <Footer />
+    <div>
+      {/* <Home/>
+      <AllProductsPage/> */}
+      <ProductSingle/>
     </div>
   );
 }
