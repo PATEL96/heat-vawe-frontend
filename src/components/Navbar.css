@@ -157,6 +157,22 @@
 	width: 55%;
 }
 
+.list-mobile{
+	display: none;
+	position: absolute;
+	right: 0;
+	top: 10vh;
+	width: 0%;
+	height: 90vh;
+	background-color: white;
+	color: black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	transition: all 3s ease-out;
+}
+
 @media screen and (max-width: 1250px) {
 	.mobile-menu{
 		display: block;
@@ -172,12 +188,26 @@
     	cursor: pointer;
 	}
 
+	.mobile-menu:active{
+		color: black;
+	}
+
 	.list-desktop{
 		display: none;
 	}
-	
+
 	.list-mobile{
+		position: absolute;
+		right: 0;
+		top: 10vh;
+		width: 80%;
+		height: 90vh;
+		background-color: white;
+		color: black;
 		display: flex;
+		align-items: center;
+		justify-content: center;
 		flex-direction: column;
+		transition: all 3s ease;
 	}
 }
