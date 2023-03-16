@@ -326,8 +326,8 @@ const ProductSingle = () => {
                     <ProductDescriptionList>
                         <ListItem><ProductDescriptionListH5>Composition:</ProductDescriptionListH5> <ListItemSpan>100% cotton</ListItemSpan></ListItem>
                         <ListItem><ProductDescriptionListH5>GSM:</ProductDescriptionListH5> <ListItemSpan>100</ListItemSpan></ListItem>
-                        <ListItem><ProductDescriptionListH5>Weight</ProductDescriptionListH5> <ListItemSpan>100g</ListItemSpan></ListItem>
-                        <ListItem><ProductDescriptionListH5>sizes</ProductDescriptionListH5> <ListItemSpan>S, M, L, XL, XXL</ListItemSpan></ListItem>
+                        <ListItem><ProductDescriptionListH5>Weight:</ProductDescriptionListH5> <ListItemSpan>100g</ListItemSpan></ListItem>
+                        <ListItem><ProductDescriptionListH5>sizes:</ProductDescriptionListH5> <ListItemSpan> S, M, L, XL, XXL</ListItemSpan></ListItem>
                         <ListItem><ProductDescriptionListH5>Estimated order processing time:</ProductDescriptionListH5> <ListItemSpan>48hrs</ListItemSpan></ListItem>
                         <ListItem><ProductDescriptionListH5>Sleeve Lenght: </ProductDescriptionListH5><ListItemSpan>Half sleeve</ListItemSpan></ListItem>
                         <ListItem><ProductDescriptionListH5>Neckline: </ProductDescriptionListH5><ListItemSpan>round</ListItemSpan></ListItem>
