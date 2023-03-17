@@ -38,6 +38,9 @@
     flex:1;
     flex-direction: column;
 }
+.Pointer{
+    cursor: pointer;
+}
 .FooterList{
     list-style-type: none;
     margin-left: 0;

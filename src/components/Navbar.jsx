@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import './Navbar.css';
 import logoImg from '../images/logo.png';
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
 	const[navbar, setNavbar] = useState(false);
@@ -29,11 +30,11 @@ export default function Navbar() {
 					<img src={logoImg} alt="Heat_Vawe" className="Logo" />
 					<div className={isMobile ? 'list-desktop' : 'list-mobile'} onClick={() => setIsMobile(true)} >
 						<div className="home">
-							Home
+							<Link to="/">Home</Link>
 							<hr color="none" />
 						</div>
 						<div className="over">
-							Oversized T-Shirts
+						<Link to="/">Oversized T-Shirts</Link>
 							<hr color="none" />
 						</div>
 						<div className="collection">

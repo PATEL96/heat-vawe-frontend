@@ -1,5 +1,5 @@
 import {useState,React} from 'react';
-import photo from '../images/photo.png'
+import photo from '../images/photo.jpg'
 import './Listing.css'
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 

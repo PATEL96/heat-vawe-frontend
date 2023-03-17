@@ -20,12 +20,13 @@ const Container=styled.div`
 const Wrapper=styled.div`
     width:40%;
     padding:20px;
-    background-Color:white;
+    background-color: #0b0d1b;
     ${mobile({ width: "75%" })}`
 
 const Title=styled.h1`
     font-size:24px;
     font-weight:500;
+    color:#72c4d9;
 `
 
 
@@ -38,6 +39,17 @@ const Input=styled.input`
         min-width:40%;
         margin:20px 10px 0 0;
         padding:10px;
+        background-color:#0b0d1b;
+        border:1px solid #714c93;
+        color:white;
+        ::placeholder,
+        ::-webkit-input-placeholder {
+          color: #f7d400;
+        }
+        :-ms-input-placeholder {
+          color: #f7d400;
+        }
+
 `
 
 const Agreement=styled.span`
@@ -49,9 +61,14 @@ const Button=styled.button`
     width: 40%;
     border: none;
     padding: 15px 20px;
-    background-color: teal;
-    color: white;
+    background-color:#714c93;
+    color:#f7d400;
     cursor: pointer;
+    &:hover{
+      color:#714c93;
+      background-color:#f7d400;
+      transition:ease-in 0.5s
+      }
 `
 
 const Registration = () => {
@@ -60,18 +77,17 @@ const Registration = () => {
         <Wrapper>
             <Title>Regestration</Title>
             <Form>
-                <Input placeholder="name"/>
-                <Input placeholder="last name"/>
-                <Input placeholder="email"/>
-                <Input placeholder="username"/>
-                <Input placeholder="password"/>
-                <Input placeholder="confirm password"/>
+                <Input placeholder="First Name"/>
+                <Input placeholder="Last Name"/>
+                <Input placeholder="Phone Number"/>
+                <Input placeholder="Email"/>
+                <Input type="password" placeholder="Password"/>
+                <Input type="password" placeholder="Confirm password"/>
                 <Agreement>By creating account i understand all the terms and conditis of the <b>Privicy Policy</b></Agreement>
-                <Button>Create</Button>
+                <Button><b>Create Account</b></Button>
             </Form>
         </Wrapper>
     </Container>
   )
 }
-
-export default Registration
+export default Registration;

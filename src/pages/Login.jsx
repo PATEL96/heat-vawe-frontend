@@ -76,6 +76,7 @@ const Button=styled.button`
       color:#714c93;
       background-color:#f7d400;
       transition:ease-in 0.5s
+      }
 `
 const Anchor=styled.a`
     color: #d23b8c;
