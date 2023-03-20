@@ -34,7 +34,7 @@ export default function Navbar() {
 							<hr color="none" />
 						</div>
 						<div className="over">
-						<Link to="/">Oversized T-Shirts</Link>
+						<Link to="/products/OversizedT-shirts">Oversized T-Shirts</Link>
 							<hr color="none" />
 						</div>
 						<div className="collection">

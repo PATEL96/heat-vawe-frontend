@@ -22,6 +22,7 @@ function App() {
       <Routes>
           <Route exact path="/" element={<Home/>}/>          
           <Route path="/products/" element={<AllProductsPage/>}/>          
+          <Route path="/products/:product" element={<AllProductsPage/>}/>          
           {/* <Route path="/products/:category" element={<ProductsPage/>}/>           */}
           <Route path="/product/:productId" element={<ProductSingle/>}/>          
           <Route path="/cart" element={<Cart/>}/>          

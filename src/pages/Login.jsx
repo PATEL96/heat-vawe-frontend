@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import {mobile} from '../responsive';
 // import {useDispatch,useSelector} from 'react-redux';
 // import { login } from "../redux/apiCalls";
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Container=styled.div`
     width:100vw;
@@ -68,15 +68,15 @@ const Button=styled.button`
     background-color:#714c93;
     color:#f7d400;
     cursor: pointer;
-    ${'' /* &:disabled{
-      color:green;
-      cursor:not-allowed;
-    } */}
     &:hover{
       color:#714c93;
       background-color:#f7d400;
       transition:ease-in 0.5s
       }
+    &:disabled{
+      color:green;
+      cursor:not-allowed;
+    }
 `
 const Anchor=styled.a`
     color: #d23b8c;
@@ -111,9 +111,9 @@ const Login = () => {
                 <Button onClick={'handleClick'} disabled={'isFetching'}>Sign In</Button>
                 {/* {error && <Error>Some thing went wrong</Error>} */}
                 <Anchor> DO NOT REMEMBER THE PASSWORD?</Anchor>
-                {/* <Link to="/register"> */}
+                <Link to="/register">
                   <Anchor>CREATE A NEW ACCOUNT</Anchor>
-                {/* </Link> */}
+                </Link>
             </Form>
         </Wrapper>
     </Container>

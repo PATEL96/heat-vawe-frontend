@@ -36,7 +36,7 @@ const Footer=()=>{
                             <h5 className="FooterHeadings">Good Stuff</h5>
                             <ul className="FooterList">
                                 <li className="FooterListItem Pointer"><Link to="/cart">Cart</Link></li>
-                                <li className="FooterListItem Pointer"><Link>Launch Series</Link></li>
+                                <li className="FooterListItem Pointer"><Link to="/products/LaunchSeries">Launch Series</Link></li>
                                 <li className="FooterListItem Pointer"><Link>Track order</Link></li>
                                 <li className="FooterListItem Pointer"><Link>Bulk or Custom orders</Link></li>
                             </ul>

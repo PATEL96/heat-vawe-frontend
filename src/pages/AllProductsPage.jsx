@@ -4,7 +4,8 @@ import  Footer  from '../components/Footer'
 import Navbar from '../components/Navbar'
 import ProductsListed from '../components/ProductsListed'
 import {mobile} from '../responsive';
-// import { useLocation } from "react-router";
+import oversizedScene from "../images/oversizedScene.jpg"
+import { useLocation } from "react-router";
 
 const Container=styled.div``
 const Title=styled.h1`
@@ -23,6 +24,7 @@ const FilterText=styled.span`
       font-size:20px;
       font-weight:600px;
       margin-right:20px;
+      color: rgb(114, 196, 217);
       ${mobile({ marginRight: "0", fontSize:"18px" })}
 
 `
@@ -30,14 +32,37 @@ const FilterText=styled.span`
 const Select=styled.select`
     padding:10px;
     margin-left:20px;
+    background-color:#714c93;
+      color:#f7d400;
     ${mobile({ margin: "10px 0" ,})}
 
 `
-const Option=styled.option``
+const Option=styled.option`
+
+`
+
+const ImageWrapper=styled.div`
+        display:flex;
+        justify-content:center;
+        align-items:center;
+`
+const Image=styled.img`
+        max-height:600px;
+        ${'' /* max-width:90% */}
+        ${mobile({ maxWidth:"100%",maxHeight:'70%'})}
+    `
+const Text=styled.h1`
+            text-align:center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); 
+            font-size:50px;   
+`
 
 const AllProductsPage = () => {
-    // const location=useLocation();
-    // const category=location.pathname.split("/")[2]
+    const location=useLocation();
+    const category=location.pathname.split("/")[2]
     const [filters, setFilters] = useState({});
     const[sort,setSort]=useState({});
 
@@ -89,6 +114,14 @@ const AllProductsPage = () => {
                 </FilterText>
             </Filter>
         </FilterContainer>
+        <ImageWrapper>
+                <Image src={oversizedScene}/>
+                <Text>{category?category:'New Arivals'}</Text>
+        </ImageWrapper>
+        <ProductsListed />
+        <ProductsListed />
+        <ProductsListed />
+        <ProductsListed />
         <ProductsListed />
         <ProductsListed />
         <ProductsListed />

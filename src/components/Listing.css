@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 .List-main{
-    margin: 30px 20px;
+    margin: 5px 10px;
     width: 300px;
-    height: 450px;
+    height: 350px;
     padding: 30px;
     font-family:'Montserrat';
     cursor: pointer;

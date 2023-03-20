@@ -6,6 +6,7 @@ import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
 // import Product from '../components/ProductDescription'
 import {mobile} from '../responsive';
+import photo from "../images/photo.jpg"
 // import { useLocation } from "react-router-dom";
 // import {publirequest} from "../axios";
 // import {addProduct} from "../redux/cartRedux";
@@ -150,11 +151,11 @@ const Amount=styled.span`
 
 const Button=styled.button`
       padding:15px;
+      cursor:pointer;
+      font-weight:800;
       background-color:#714c93;
       border:5px solid #714c93;
-      cursor:pointer;
       color:#f7d400;
-      font-weight:800;
       &:hover{
         color:#714c93;
         background-color:#f7d400;
@@ -263,7 +264,7 @@ const ProductSingle = () => {
             <Wrapper>
               <ImgContainer>
                 {/* <Image src={product.img}/> */}
-                <Image src="{product.img}"/>
+                <Image src={photo}/>
               </ImgContainer>
               <InfoContainer>
                 {/* <Title>{product.title}</Title> */}
@@ -331,7 +332,7 @@ const ProductSingle = () => {
                         <ListItem><ProductDescriptionListH5>Estimated order processing time:</ProductDescriptionListH5> <ListItemSpan>48hrs</ListItemSpan></ListItem>
                         <ListItem><ProductDescriptionListH5>Sleeve Lenght: </ProductDescriptionListH5><ListItemSpan>Half sleeve</ListItemSpan></ListItem>
                         <ListItem><ProductDescriptionListH5>Neckline: </ProductDescriptionListH5><ListItemSpan>round</ListItemSpan></ListItem>
-                        <ListItem><h2>Made with ❤️ in <span style={{color:"orange"}}>IN</span>D<span style={{color:"green"}}>IN</span></h2></ListItem>
+                        <ListItem><h2>Made with ❤️ in <span style={{color:"orange"}}>IN</span>D<span style={{color:"green"}}>IA</span></h2></ListItem>
                     </ProductDescriptionList>
               </Description>
 
