@@ -31,14 +31,16 @@ export default function Navbar() {
 		<div className={navbar ? 'nav-main active' : 'nav-main'}>
 			<div className={navContent ? 'navContent active' : 'navContent'}>
 				<div className="leftSide">
-					<img src={logoImg} alt="Heat_Vawe" className="Logo" />
+					<Link to="/">
+						<img src={logoImg} alt="Heat_Vawe" className="Logo" />
+					</Link>
 					<div className={isMobile ? 'list-desktop' : 'list-mobile'} onClick={() => setIsMobile(true)} >
 						<div className="home">
 							<Link to="/">Home</Link>
 							<hr color="none" />
 						</div>
 						<div className="over">
-						<Link to="/products/OversizedT-shirts">Oversized T-Shirts</Link>
+							<Link to="/products/OversizedT-shirts">Oversized T-Shirts</Link>
 							<hr color="none" />
 						</div>
 						<div className="collection">
