@@ -34,20 +34,24 @@ export default function Navbar() {
 					<img src={logoImg} alt="Heat_Vawe" className="Logo" />
 					<div className={isMobile ? 'list-desktop' : 'list-mobile'} onClick={() => setIsMobile(true)} >
 						<div className="home">
-							<Link to="/">Home</Link>
+							<Link to="/" className="links">Home</Link>
 							<hr color="none" />
 						</div>
 						<div className="over">
-						<Link to="/products/OversizedT-shirts">Oversized T-Shirts</Link>
+							<Link to="/products/OversizedT-shirts" className="links">Oversized T-Shirts</Link>
 							<hr color="none" />
 						</div>
 						<div className="collection">
-							{/* // Todo: make list Here */}
-							Collections
+							<Link to="/" className="links">
+								{/* // Todo: make list Here */}
+								Collections
+							</Link>
 							<hr color="none" />
 						</div>
 						<div className="about">
-							About
+							<Link to="/" className="links">
+								About
+							</Link>
 							<hr color="none" />
 						</div>
 					</div>

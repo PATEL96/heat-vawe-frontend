@@ -218,7 +218,13 @@
 		transition: all 3s ease;
 	}
 
+	.links{
+		font-weight: 700;
+		color: black;
+	}
+
 	.home{
+		color: black;
 		padding-top: 10px;
 		padding-bottom: 10px;
 	}
