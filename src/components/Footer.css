@@ -2,6 +2,8 @@
 .Container{
     font-family: 'Montserrat','san-serif';
     margin-top: 50px;
+    /* padding-top: 100vh; */
+    
 }
 .Wrapper{
     display: flex;
@@ -35,6 +37,9 @@
 .FourRow{
     flex:1;
     flex-direction: column;
+}
+.Pointer{
+    cursor: pointer;
 }
 .FooterList{
     list-style-type: none;

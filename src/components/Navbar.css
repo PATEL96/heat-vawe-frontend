@@ -215,25 +215,5 @@
 		align-items: center;
 		justify-content: top;;
 		flex-direction: column;
-		transition: all 3s ease;
-	}
-
-	.home{
-		padding-top: 10px;
-		padding-bottom: 10px;
-	}
-	.over{
-		padding-top: 10px;
-		padding-bottom: 10px;
-	}
-	
-	.collection{
-		padding-top: 10px;
-		padding-bottom: 10px;
-	}
-	
-	.about{
-		padding-top: 10px;
-		padding-bottom: 10px;
 	}
 }

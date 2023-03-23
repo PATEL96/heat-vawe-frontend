@@ -1,8 +1,8 @@
-
 import {React,useState} from "react";
 import logo from '../images/logo.png';
 import './Footer.css';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import { Link } from 'react-router-dom';
 
 const SubmitFormHandler=(e)=>{
     e.preventDefault();
@@ -12,7 +12,7 @@ const SubmitFormHandler=(e)=>{
 
 const Footer=()=>{
     const [Email, setEmail] = useState("");
-    console.log(Email);
+    // console.log(Email);
 
     
 
@@ -35,17 +35,17 @@ const Footer=()=>{
                         <div className="TwoRow RROOWW">
                             <h5 className="FooterHeadings">Good Stuff</h5>
                             <ul className="FooterList">
-                                <li className="FooterListItem">Cart</li>
-                                <li className="FooterListItem">Launch Series</li>
-                                <li className="FooterListItem">Track order</li>
-                                <li className="FooterListItem">Bulk or Custom orders</li>
+                                <li className="FooterListItem Pointer"><Link to="/cart">Cart</Link></li>
+                                <li className="FooterListItem Pointer"><Link to="/products/LaunchSeries">Launch Series</Link></li>
+                                <li className="FooterListItem Pointer"><Link>Track order</Link></li>
+                                <li className="FooterListItem Pointer"><Link>Bulk or Custom orders</Link></li>
                             </ul>
                         </div>
                         <div className="ThreeRow RROOWW">
                         <h5 className="FooterHeadings">Boring Stuff</h5>
-                            <ul className="FooterList">
-                                <li className="FooterListItem">Terms & Conditions</li>
-                                <li className="FooterListItem">Privicy Policy</li>
+                            <ul className="FooterList ">
+                                <li className="FooterListItem Pointer">Terms & Conditions</li>
+                                <li className="FooterListItem Pointer">Privicy Policy</li>
                             </ul>
                         </div>
                         <div className="FourRow RROOWW">
@@ -63,7 +63,7 @@ const Footer=()=>{
                                 <img className="logoImg" src={logo} alt="Heat_Vawe"/>
                         </div>
                         <div className="social RROOWW">
-                                <InstagramIcon/>
+                                <Link to="https://www.instagram.com/heat_vawe/"><InstagramIcon/></Link>
                         </div>
 
                     </div>
