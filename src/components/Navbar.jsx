@@ -1,6 +1,10 @@
 import React from "react";
 import { useState } from "react";
 import './Navbar.css';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import CloseIcon from '@mui/icons-material/Close';
+import MenuIcon from '@mui/icons-material/Menu';
 import logoImg from '../images/logo.png';
 
 export default function Navbar() {
@@ -47,8 +51,14 @@ export default function Navbar() {
 						</div>
 					</div>
 					<button className="mobile-menu" onClick={() => setIsMobile(!isMobile)}>
-						{isMobile ? (<i className="fa-solid fa-bars" />) : (<i className="fa-solid fa-times" />)}
+						{isMobile ? (<MenuIcon />) : (<CloseIcon />)}
 					</button>
+				</div>
+				<div className="rightSide">
+					<div className="quickActions">
+						<ShoppingCartIcon className="cart" />
+						<AccountCircleIcon className="account" />
+					</div>
 				</div>
 			</div>
 		</div>

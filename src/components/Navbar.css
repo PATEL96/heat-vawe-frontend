@@ -14,7 +14,6 @@
 	transition: 0.3s ease-in;
 }
 
-
 .nav-main.active {
 	background: rgba(255, 255, 255, 0.211);
 	backdrop-filter: blur(20px);
@@ -22,10 +21,10 @@
 }
 
 .navContent {
-	/* display: flex;
+	display: flex;
 	flex-direction: row;
 	align-items: center;
-	justify-content: center; */
+	justify-content: space-between;
 	color: white;
 	transition: 0.3s ease-in;
 }
@@ -49,6 +48,10 @@
 	align-items: center;
 	justify-content: center;
 	float: left;
+}
+
+.rightSide{
+	padding-right: 20px;
 }
 
 .list-desktop {
@@ -157,34 +160,38 @@
 	width: 55%;
 }
 
-.list-mobile{
-	display: none;
-	position: absolute;
-	right: 0;
-	top: 10vh;
-	width: 0%;
-	height: 90vh;
-	background-color: white;
-	color: black;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	transition: all 3s ease-out;
+.cart{
+	cursor: pointer;
+	padding: 10px;
+}
+
+.account{
+	cursor: pointer;
+	padding: 10px;
 }
 
 @media screen and (max-width: 1250px) {
+	.nav-main{
+		height: 7.5vh;
+	}
+
+	.Logo{
+		height: 6vh;
+	}
+
+	.rightSide{
+		padding-right: 8%;
+	}
+
 	.mobile-menu{
+		position: absolute;
+		right: 0;
 		display: block;
-    	position: absolute;
     	font-size: 30px;
     	color: white;
     	background-color: transparent;
     	outline: none;
     	border: none;
-    	height: 50px;
-    	top: (8.2/2)vh;
-   		right: 20px;
     	cursor: pointer;
 	}
 
@@ -198,16 +205,35 @@
 
 	.list-mobile{
 		position: absolute;
-		right: 0;
-		top: 10vh;
-		width: 80%;
-		height: 90vh;
+		right: 0px;
+		width: 70%;
+		top:7.5vh;
+		height: 100vh;
 		background-color: white;
 		color: black;
 		display: flex;
 		align-items: center;
-		justify-content: center;
+		justify-content: top;;
 		flex-direction: column;
 		transition: all 3s ease;
+	}
+
+	.home{
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.over{
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	
+	.collection{
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	
+	.about{
+		padding-top: 10px;
+		padding-bottom: 10px;
 	}
 }
