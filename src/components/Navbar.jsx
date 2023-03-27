@@ -14,7 +14,7 @@ export default function Navbar() {
 	const[navbar, setNavbar] = useState(false);
 	const[navContent, setNavConent] = useState(false);
 	const [isMobile, setIsMobile] = useState(true);
-	const [isUp, setIsUp] = useState(true);
+	const [isUp, setIsUp] = useState(false);
 
 	var viewport_height = window.innerHeight;
 
