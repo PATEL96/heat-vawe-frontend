@@ -6,7 +6,8 @@ import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
 import {mobile} from '../responsive';
 import photo from "../images/photo.jpg"
-// import { useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+import { Products } from "../Data";
 // import {publirequest} from "../axios";
 // import {addProduct} from "../redux/cartRedux";
 // import { useDispatch } from "react-redux";
@@ -223,25 +224,26 @@ const RelatedProductsWrapper= styled.div``
 
 
 const ProductSingle = () => {
-    // const location=useLocation();
-    // const id=location.pathname.split("/")[2];
+    const location=useLocation();
+    const id=location.pathname.split("/")[2];
     const [product,setProduct]=useState({});
     const [quantity, setQuantity] = useState(1);
     const [COLOR,setColor]=useState("")
     const [size,setSize]=useState("")
     // const dispatch = useDispatch();
 
-    // useEffect(()=>{
-    //     const getProduct=async()=>{
-    //         try {
-    //             const res=await publirequest.get("/product/find/"+id)
-    //             setProduct(res.data)
-    //         } catch (error) {
-                
-    //         }
-    //     }
-    //     getProduct()
-    // },[id])
+    useEffect(()=>{
+        const getProduct=async()=>{
+          Products.forEach((elemnt)=>
+          {
+            if(elemnt.Id==id){
+              setProduct(elemnt)
+            }
+          }
+          );      
+        }
+        getProduct()
+    },[id])
 
     const handleQuantity = (type) => {
     //   if (type === "dec") {
@@ -263,27 +265,22 @@ const ProductSingle = () => {
             <Wrapper>
               <ImgContainer>
                 {/* <Image src={product.img}/> */}
-                <Image src={photo}/>
+                {/* {product.Image.forEach((Image) => ( */}
+                <Image src={product.Image}/>
+                {/* ))} */}
+                {/* <Image src={product.Images}/> */}
               </ImgContainer>
               <InfoContainer>
-                {/* <Title>{product.title}</Title> */}
-                <Title>Sexy Jutsu</Title>
-                {/* <Price> ₹{product.price}<Strike><strike> ₹{Math.round(product.price+(product.price/100)*15)}</strike></Strike></Price> */}
-                <Price> ₹{500} <Strike><strike> ₹{Math.round(500+(500/100)*15)}</strike></Strike></Price>
-                {/* <Desc></Desc> */}
+                <Title>{product.Title}</Title>
+                {/* <Title>Sexy Jutsu</Title> */}
+                <Price> ₹{product.Price}<Strike><strike> ₹{Math.round(product.Price+(product.Price/100)*10)}</strike></Strike></Price>
+                {/* <Price> ₹{500} <Strike><strike> ₹{Math.round(500+(500/100)*15)}</strike></Strike></Price> */}
                 <FilterContainer>
-                    {/* <Filter>
-                      <FilterTitle>Color</FilterTitle>
-                      {product.color?.map((color) => (
-                        <FilterColor name={color} color={color} key={color} onClick={()=>{ console.log(COLOR);setColor(color); }}/>    
-                      ))}
-                    </Filter> */}
                     <Filter>
-                      <FilterTitle>Color: </FilterTitle>
-                        <FilterColor name='red' color='red' key="red" onClick={()=>{ console.log("red");setColor("red"); }}/>    
-                        <FilterColor name='lavender' color='lavender' key="lavender" onClick={()=>{ console.log("lavender");setColor("lavender"); }}/>    
-                        <FilterColor name='white' color='white' key="white" onClick={()=>{ console.log("white");setColor("white"); }}/>    
-                        <FilterColor name='black' color='black' key="black" onClick={()=>{ console.log("black");setColor("black"); }}/>    
+                      <FilterTitle>Color</FilterTitle>
+                      {product.Colors?.map((color) => (
+                        <FilterColor title={color} name={color} color={color} key={color} onClick={()=>{ console.log(COLOR);setColor(color); }}/>    
+                      ))}
                     </Filter>
 
                     <Filter>
@@ -324,7 +321,7 @@ const ProductSingle = () => {
               <Description>
                     <DescriptionHeading>Product details:</DescriptionHeading>
                     <ProductDescriptionList>
-                        <ListItem><ProductDescriptionListH5>Composition:</ProductDescriptionListH5> <ListItemSpan>100% cotton</ListItemSpan></ListItem>
+                        <ListItem><ProductDescriptionListH5>Composition:</ProductDescriptionListH5> <ListItemSpan>98% cotton</ListItemSpan></ListItem>
                         <ListItem><ProductDescriptionListH5>GSM:</ProductDescriptionListH5> <ListItemSpan>100</ListItemSpan></ListItem>
                         <ListItem><ProductDescriptionListH5>Weight:</ProductDescriptionListH5> <ListItemSpan>100g</ListItemSpan></ListItem>
                         <ListItem><ProductDescriptionListH5>sizes:</ProductDescriptionListH5> <ListItemSpan> S, M, L, XL, XXL</ListItemSpan></ListItem>

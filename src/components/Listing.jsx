@@ -20,7 +20,7 @@ const MouseIn=(props)=>{
 export default function Listing(props) {
     const [mouseIn, setmoiseIn] = useState(false)
 	return(
-    <Link to="/product/:productId">
+    <Link to={`/product/${props.element.Id}`}>
 		<div className="List-main" onMouseLeave={()=>{setmoiseIn(false)}} onMouseEnter={()=>{setmoiseIn(true)}}>
 			<div className='image' >
                     <img  alt={props.element.Title} src={props.element.Image} className='productImage'/>

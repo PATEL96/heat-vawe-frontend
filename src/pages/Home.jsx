@@ -29,7 +29,7 @@ export default function Home() {
 			{/* <Listing/> */}
 			<Text>Categories<HR/></Text>
 			<Catagories/>
-			<Text>Products<HR/></Text>
+			<Text>Fresh Stuff<HR/></Text>
 			<ProductsListed/>
 			<Footer/>
 		</div>

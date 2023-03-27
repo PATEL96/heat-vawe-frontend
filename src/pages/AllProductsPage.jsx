@@ -121,13 +121,6 @@ const AllProductsPage = () => {
                 <Text>{category?category:'New Arivals'}</Text>
         </ImageWrapper>
         <ProductsListed />
-        <ProductsListed />
-        <ProductsListed />
-        <ProductsListed />
-        <ProductsListed />
-        <ProductsListed />
-        <ProductsListed />
-        <ProductsListed />
         <Footer/>
     </Container>
   )

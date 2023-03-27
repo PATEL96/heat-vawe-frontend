@@ -219,7 +219,7 @@ const Cart = () => {
               <Info>
 
                     
-                      <Product>
+                      {/* <Product>
                         <ProductDetail>
                             <Image src= "https://imgs.search.brave.com/aApEG4qgZBl1Mz4G7W5yOm1zQbq2HlY062sImOloua4/rs:fit:632:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5m/Z1JYV1BLQnl6a1Zi/TFJ1T3Q4YnhnSGFG/aiZwaWQ9QXBp"/>
                             <Details>
@@ -292,7 +292,7 @@ const Cart = () => {
                             </Details>
                         </ProductPriceDetail>
                      
-                    </Product> 
+                    </Product>  */}
                     
                    
                     {/* {cart.products.map(product=>(
@@ -327,19 +327,19 @@ const Cart = () => {
                 <SummryTitle>Order Summary</SummryTitle>
                 <SummryItem>
                   <SummryItemtext>subtotal</SummryItemtext>
-                  <SummryItemPrice>₹ 1000</SummryItemPrice>
+                  <SummryItemPrice>₹ 000</SummryItemPrice>
                 </SummryItem>
                 <SummryItem>
                   <SummryItemtext>Estimated Shipping</SummryItemtext>
-                  <SummryItemPrice>₹ 1000</SummryItemPrice>
+                  <SummryItemPrice>₹ 000</SummryItemPrice>
                 </SummryItem>
                 <SummryItem>
                   <SummryItemtext>Shipping Discount</SummryItemtext>
-                  <SummryItemPrice>₹ 5</SummryItemPrice>
+                  <SummryItemPrice>₹ 0</SummryItemPrice>
                 </SummryItem>
                 <SummryItem Type="total">
                   <SummryItemtext >Total</SummryItemtext>
-                  <SummryItemPrice >₹ 10000</SummryItemPrice>
+                  <SummryItemPrice >₹ 0000</SummryItemPrice>
                 </SummryItem>
                 <Button>Checkout</Button>
               </Summary>

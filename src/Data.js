@@ -8,24 +8,105 @@ import {TupacCamel,
     BobMarleyCamel,
     BeegieBlack,
     Bear,
+    SnoopDawgBlackFront,
+    SnoopDawgBlackBack,
+    EminemWhiteBack,
+    EminemWhiteFront,
+    EminemLavendarFront,
+    EminemLavendarBack,
+    BobMarleyWhiteFront,
+    BobMarleyWhiteBack,
+    BobMarleyLavenderFront,
+    BobMarleyLavenderBack,
+    BobMarleyCamelBack,
+    BobMarleyCamelFront,
+    BeegieBlackBack,
+    BeegieBlackFront,
+    DoodleLavenderBack,
+    DoodleLavenderFront,
 } from "./images/Photos"
 
 export const Products=[
-    {
-        Title:"Bear",
-        Colors:['White',"Black" ],
-        Images:{White:Bear,Black:Bear},
-        Image:Bear,
-        Price:450,
+    {   
+        Id:1,
+        Title:"Eminem",
+        Colors:['White',"#B2A4D4"],
+        Images:[EminemWhiteFront,EminemWhiteBack,EminemLavendarFront,EminemLavendarBack],
+        Price:600,
+        Image:EminemLavendar
+       
     },
-    {
+    {   Id:2,
         Title:"Tu Pac",
-        Colors:['Camel' ],
-        Images:{Camel:TupacCamel},
+        Colors:['#BF9972'],
+        Images:[TupacCamel],
         Price:600,
         Image:TupacCamel,
     },
-    {
+    {   Id:3,
+        Title:"Beegie",
+        Colors:['Black'],
+        Images:[BeegieBlackFront,BeegieBlackBack],
+        Price:600,
+        Image:BeegieBlack,
+        
+    },
+    {   Id:4,
+        Title:"Doodle",
+        Colors:["#B2A4D4"],
+        Images:[DoodleLavender],
+        Price:600,
+        Image:DoodleLavender
+    },
+    {   Id:5,
+        Title:"Eminem",
+        Colors:['White',"#B2A4D4","#B2A4D4"],
+        Images:[EminemWhiteFront,EminemWhiteBack,EminemLavendarFront,EminemLavendarBack],
+        Price:600,
+        Image:EminemWhite
+    },
+    {   Id:6,
+        Title:"Snoop Dawg",
+        Colors:['Black'],
+        Images:SnoopDawgBlackFront,
+        Price:600,
+        Image:SnoopDawgBlack
+    },
+    {   Id:7,
+        Title:"Bob Marley",
+        Colors:["#BF9972","#B2A4D4",'White'],
+        Images:[BobMarleyWhiteFront,BobMarleyWhiteBack,BobMarleyLavenderFront,BobMarleyLavenderBack,BobMarleyCamelFront,BobMarleyCamelBack],
+        Price:600,
+        Image:BobMarleyWhite
+    },
+    {   Id:8,
+        Title:"Bob Marley",
+        Colors:["#BF9972","#B2A4D4",'White'],
+        Images:[BobMarleyWhiteFront,BobMarleyWhiteBack,BobMarleyLavenderFront,BobMarleyLavenderBack,BobMarleyCamelFront,BobMarleyCamelBack],
+        Price:600,
+        Image:BobMarleyCamel
+    },
+    {   Id:9,
+        Title:"Bob Marley",
+        Colors:["#BF9972","#B2A4D4",'White'],
+        Images:[BobMarleyWhiteFront,BobMarleyWhiteBack,BobMarleyLavenderFront,BobMarleyLavenderBack,BobMarleyCamelFront,BobMarleyCamelBack],
+        Price:600,
+        Image:BobMarleyLavender
+    },
+    {   Id:10,
+        Title:"Bear",
+        Colors:['White','Black'],
+        Images:[Bear],
+        Image:Bear,
+        Price:450,
+    },
+    
+    
+]
+export const RecentProducts=[
+    
+    
+    {   Id:3,
         Title:"Beegie",
         Colors:["Black"],
         Images:{Black:BeegieBlack},
@@ -33,36 +114,19 @@ export const Products=[
         Image:BeegieBlack,
         
     },
-    {
-        Title:"Doodle",
-        Colors:["Lavender"],
-        Images:{Lavender:DoodleLavender},
-        Price:600,
-        Image:DoodleLavender
-    },
-    {
-        Title:"Eminem",
-        Colors:["White","Lavender"],
-        Images:{White:EminemWhite,Lavender:EminemLavendar},
-        Price:600,
-        Image:EminemWhite
-    },
-    {
+    {   Id:7,
         Title:"Snoop Dawg",
         Colors:['Black'],
         Images:{Black:SnoopDawgBlack},
         Price:600,
         Image:SnoopDawgBlack
     },
-    {
-        Title:"Bob Marley",
-        Colors:['Camel',"Lavender","White"],
-        Images:{ White:BobMarleyWhite,
-                Lavender:BobMarleyLavender,
-                Camel:BobMarleyCamel
-            },
+    {   Id:5,
+        Title:"Eminem",
+        Colors:['White',"#B2A4D4"],
+        Images:{White:EminemWhite,Lavender:EminemLavendar},
         Price:600,
-        Image:BobMarleyWhite
+        Image:EminemWhite
     },
     
     
