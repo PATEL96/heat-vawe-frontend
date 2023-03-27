@@ -15,8 +15,8 @@
 }
 
 .nav-main.active {
-	background: rgba(255, 255, 255, 0.211);
-	backdrop-filter: blur(20px);
+	background: #0b0d1bbf;
+	backdrop-filter: blur(10px);
 	transition: 0.3s ease-in;
 }
 
