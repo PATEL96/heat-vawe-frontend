@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 .nav-main {
-	font-weight: 300;
+	font-weight: 800;
 	font-family: 'Montserrat';
 	z-index: 10;
 	color: azure;
@@ -170,6 +170,47 @@
 	padding: 10px;
 }
 
+.coll-span{
+	display: flex;
+	align-items: center;
+	font-size: 2.7vh;
+}
+
+.coll-span>button{
+	cursor: pointer;
+	background-color: transparent;
+	color: white;
+	border: 0px transparent;
+}
+
+.coll-menu{
+	font-family: 'Montserrat';
+	display: none;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
+	position: relative;
+	/* top:10%; */
+}
+
+.coll-menu.active{
+	border: 2px solid #d20707;
+	border-radius: 10px;
+	background-color: #0b0d1be4;
+	position: absolute;
+	top:10.5vh;
+	display: flex;
+}
+
+.coll-menu>hr{
+	width: 80%;
+	align-self: center;
+}
+
+.coll-item{
+	padding: 20px;
+}
+
 @media screen and (max-width: 1250px) {
 	.nav-main{
 		height: 7.5vh;
@@ -209,8 +250,8 @@
 		width: 70%;
 		top:7.5vh;
 		height: 100vh;
-		background-color: white;
-		color: black;
+		background-color: #0b0d1bfb;
+		color: white;
 		display: flex;
 		align-items: center;
 		justify-content: top;;
@@ -220,11 +261,10 @@
 
 	.links{
 		font-weight: 700;
-		color: black;
+		/* color: black; */
 	}
 
 	.home{
-		color: black;
 		padding-top: 10px;
 		padding-bottom: 10px;
 	}
@@ -241,5 +281,24 @@
 	.about{
 		padding-top: 10px;
 		padding-bottom: 10px;
+	}
+	.coll-menu{
+		font-family: 'Montserrat';
+		font-size: 20px;
+		display: none;
+		align-items: center;
+		justify-content: space-between;
+		flex-direction: column;
+		position: relative;
+		/* top:10%; */
+	}
+	
+	.coll-menu.active{
+		border: 2px solid #d20707;
+		border-radius: 10px;
+		background-color: #0b0d1b;
+		position: relative;
+		top:10.5%;
+		display: flex;
 	}
 }

@@ -6,6 +6,7 @@ import ProductsListed from '../components/ProductsListed'
 import {mobile} from '../responsive';
 import oversizedScene from "../images/oversizedScene.jpg"
 import { useLocation } from "react-router";
+import { textAlign } from '@mui/system'
 
 const Container=styled.div``
 const Title=styled.h1`
@@ -57,7 +58,8 @@ const Text=styled.h1`
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%); 
-            font-size:50px;   
+            font-size:50px;
+            ${mobile({top:"45%"})}
 `
 
 const AllProductsPage = () => {
